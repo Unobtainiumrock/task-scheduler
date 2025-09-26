@@ -2,7 +2,6 @@ import json
 import subprocess
 import time
 import sys
-from datetime import datetime
 
 # --- CONFIGURATION ---
 # A unique ID for notifications so that each new one replaces the last.
@@ -129,4 +128,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
