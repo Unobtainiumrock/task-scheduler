@@ -43,14 +43,16 @@ I won't bother to make this work for non-linux users. Feel free to make a PR add
 OPENAI_API_KEY=your-key-here
 ```
 
-2. Paste in your natural language set of tasks with accompanying deadlines into the string in the main method towards the bottom of the scheduler.py file. I have an example of mine in Markdown, which is the preferred format.
+2. Create a markdown file (e.g., `tasks3.md`) with your natural language set of tasks and accompanying deadlines. Markdown format is preferred. See `tasks3.md` for an example.
 
 **note: Can easily make some UI for this later, but for now this is sufficient**
 
 3. Run both scripts together. This is ideal so that the generated set of tasks are synchronized with the intended time of day to complete them. This is because if you were to generate a schedule, but initiate the timer half an hour later, then there will be a disconnect between the two.
 
+**Note:** If you're using pyenv, activate your environment first (e.g., `pyenv activate nlp`).
+
 ```bash
-python3 scheduler.py && python3 timer.py schedule.json
+python3 schedulerv2.py tasks3.md && python3 timerv2.py schedule.json
 ```
 
 **note: you can still run each individually to inspect the plans generated in the first stage if you'd like**

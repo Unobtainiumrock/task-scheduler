@@ -1,6 +1,6 @@
 import os
 import json
-import argparse  # NEW: Import the argparse library
+import argparse
 from openai import OpenAI, OpenAIError
 from datetime import datetime
 from dotenv import load_dotenv
@@ -36,7 +36,7 @@ def create_timeline(user_input_text: str) -> dict:
     - Current Time: {current_time}
 
     **Your Instructions:**
-    1.  **Define Working Hours**: The user's workday ends at **11:00 PM (23:00)**. You should schedule focused work blocks and necessary breaks up until this time. # NEW INSTRUCTION
+    1.  **Define Working Hours**: The user's workday ends at **11:00 PM (23:00)**. You should schedule focused work blocks and necessary breaks up until this time.
     2.  **Analyze and Prioritize**: Scrutinize the user's entire input to identify the highest-priority tasks that must be done *today*. Priority is determined by the closest deadlines (e.g., "due tomorrow" is higher priority than "due next week") and explicit user commands (e.g., "do this today").
     3.  **Build a Logical Schedule**: Create a realistic schedule for the rest of the day, starting from the **Current Time** ({current_time}) and ending at **23:00**.
     4.  **Structure Time Blocks**: Allocate focused work blocks (typically 60-90 minutes) for demanding tasks and shorter blocks for minor ones. Intelligently place short breaks (15 mins) between tasks and at least one longer break (e.g., for dinner).

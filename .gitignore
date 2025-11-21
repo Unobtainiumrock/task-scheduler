@@ -1,2 +1,9 @@
 .env
 misc-tasks.md
+__pycache__/
+*.pyc
+*.pyo
+*.swp
+*.swo
+*~
+schedule.json
