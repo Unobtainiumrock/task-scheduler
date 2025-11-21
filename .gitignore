@@ -7,3 +7,12 @@ __pycache__/
 *.swo
 *~
 schedule.json
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/

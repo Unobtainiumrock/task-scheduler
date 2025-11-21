@@ -1,0 +1,24 @@
+codecov:
+  require_ci_to_pass: yes
+
+coverage:
+  precision: 2
+  round: down
+  range: "70...100"
+
+  ignore:
+    - "tests/*"
+    - "*/tests/*"
+    - "*/__pycache__/*"
+
+  status:
+    project:
+      default:
+        target: 70%
+        threshold: 1%
+        base: auto
+        branches:
+          - nicholas
+          - main
+          - master
+
