@@ -1,5 +1,14 @@
 # Task Scheduler & Desktop Timer
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Python 3](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Platform: Linux](https://img.shields.io/badge/platform-Linux-lightgrey.svg)](https://www.linux.org/)
+[![GitHub release](https://img.shields.io/github/v/release/Unobtainiumrock/task-scheduler?include_prereleases&sort=semver)](https://github.com/Unobtainiumrock/task-scheduler/releases)
+[![codecov](https://codecov.io/gh/Unobtainiumrock/task-scheduler/branch/nicholas/graph/badge.svg)](https://codecov.io/gh/Unobtainiumrock/task-scheduler)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Unobtainiumrock/task-scheduler/graphs/commit-activity)
+[![GitHub issues](https://img.shields.io/github/issues/Unobtainiumrock/task-scheduler.svg)](https://github.com/Unobtainiumrock/task-scheduler/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/Unobtainiumrock/task-scheduler.svg)](https://github.com/Unobtainiumrock/task-scheduler/pulls)
+
 A two-script system to parse an unstructured to-do list using an LLM and run a live countdown timer on your Linux desktop with synchronized desktop notifications.
 
 ## Features
@@ -226,4 +235,23 @@ Contributions are welcome! This project is Linux-focused but PRs adding Windows/
 
 ## License
 
-[Add your license here]
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0).
+
+```
+Copyright (C) 2024 Task Prioritizer Contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
+
+See the [LICENSE](LICENSE) file for the full license text.
