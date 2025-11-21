@@ -22,7 +22,9 @@ class TestScheduler:
     
     def test_create_timeline_returns_dict(self):
         """Test that create_timeline returns a dictionary."""
-        with patch('scheduler.client') as mock_client:
+        with patch('scheduler.get_client') as mock_get_client:
+            mock_client = MagicMock()
+            mock_get_client.return_value = mock_client
             mock_response = MagicMock()
             mock_response.choices = [MagicMock()]
             mock_response.choices[0].message.content = json.dumps({
@@ -38,7 +40,9 @@ class TestScheduler:
     
     def test_create_timeline_handles_empty_input(self):
         """Test that create_timeline handles empty input gracefully."""
-        with patch('scheduler.client') as mock_client:
+        with patch('scheduler.get_client') as mock_get_client:
+            mock_client = MagicMock()
+            mock_get_client.return_value = mock_client
             mock_response = MagicMock()
             mock_response.choices = [MagicMock()]
             mock_response.choices[0].message.content = json.dumps({
@@ -52,7 +56,9 @@ class TestScheduler:
     
     def test_create_timeline_includes_required_fields(self):
         """Test that the returned schedule includes required fields."""
-        with patch('scheduler.client') as mock_client:
+        with patch('scheduler.get_client') as mock_get_client:
+            mock_client = MagicMock()
+            mock_get_client.return_value = mock_client
             mock_response = MagicMock()
             mock_response.choices = [MagicMock()]
             mock_response.choices[0].message.content = json.dumps({

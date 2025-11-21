@@ -28,13 +28,20 @@ from dotenv import load_dotenv
 # Load environment variables from the .env file
 load_dotenv()
 
-# Initialize the OpenAI client
-try:
-    client = OpenAI()
-except OpenAIError as e:
-    print(f"Error initializing OpenAI client: {e}")
-    print("Please make sure your OPENAI_API_KEY is set correctly in your .env file.")
-    exit()
+# Initialize the OpenAI client lazily to avoid import-time failures
+client = None
+
+def get_client():
+    """Get or initialize the OpenAI client."""
+    global client
+    if client is None:
+        try:
+            client = OpenAI()
+        except OpenAIError as e:
+            print(f"Error initializing OpenAI client: {e}")
+            print("Please make sure your OPENAI_API_KEY is set correctly in your .env file.")
+            raise
+    return client
 
 def create_timeline(user_input_text: str) -> dict:
     """
@@ -78,7 +85,7 @@ def create_timeline(user_input_text: str) -> dict:
     """
     
     try:
-        response = client.chat.completions.create(
+        response = get_client().chat.completions.create(
             model="gpt-4o",  # Using a more powerful model can improve reasoning
             response_format={"type": "json_object"},
             messages=[

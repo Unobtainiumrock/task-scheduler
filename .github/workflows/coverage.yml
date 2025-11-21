@@ -24,9 +24,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       
+      - name: Set up test environment
+        run: |
+          # Set a dummy API key for testing (tests mock the OpenAI client anyway)
+          echo "OPENAI_API_KEY=test-key-for-ci" >> $GITHUB_ENV
+      
       - name: Run tests with coverage
         run: |
           pytest --cov=scheduler --cov=timer --cov-report=xml --cov-report=term
+        continue-on-error: false
       
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
