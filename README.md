@@ -1,11 +1,12 @@
 # Task Scheduler & Desktop Timer
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Python 3](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Platform: Linux](https://img.shields.io/badge/platform-Linux-lightgrey.svg)](https://www.linux.org/)
 [![GitHub release](https://img.shields.io/github/v/release/Unobtainiumrock/task-scheduler?include_prereleases&sort=semver)](https://github.com/Unobtainiumrock/task-scheduler/releases)
+[![GitHub Actions CI](https://img.shields.io/github/actions/workflow/status/Unobtainiumrock/task-scheduler/coverage.yml?branch=nicholas&label=CI)](https://github.com/Unobtainiumrock/task-scheduler/actions/workflows/coverage.yml)
 [![codecov](https://codecov.io/gh/Unobtainiumrock/task-scheduler/branch/nicholas/graph/badge.svg)](https://codecov.io/gh/Unobtainiumrock/task-scheduler)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Unobtainiumrock/task-scheduler/graphs/commit-activity)
+[![Maintained](https://img.shields.io/badge/Maintained-yes-green.svg)](https://github.com/Unobtainiumrock/task-scheduler/graphs/commit-activity)
 [![GitHub issues](https://img.shields.io/github/issues/Unobtainiumrock/task-scheduler.svg)](https://github.com/Unobtainiumrock/task-scheduler/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Unobtainiumrock/task-scheduler.svg)](https://github.com/Unobtainiumrock/task-scheduler/pulls)
 
